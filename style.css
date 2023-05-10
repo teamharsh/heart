@@ -1,0 +1,108 @@
+.sq {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(45deg);
+    animation-name: three;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   }
+.ci1{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50px;
+     animation-name: two;
+     animation-iteration-count:infinite;
+     animation-duration: 2s;
+}
+
+.ci2{
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     border-radius: 50px;
+     animation-name: one;
+     animation-iteration-count:infinite;
+     animation-duration: 2s;
+}
+
+@keyframes one {
+ 0% {
+   left: 135.36px;
+   top: 64.64px;
+   background-color: red;
+ }
+  25% {
+    left: 135.36px;
+    top: 64.64px;
+    background-size: red;
+  }
+ 50%{
+    left: 64.64px;
+     top: 135.36px;
+     background-color: red;
+ }
+  75% {
+    left: 64.64px;
+    top: 135.36px;
+    background-color: red;
+  }
+100% {
+    left: 135.36px;
+    top: 64.64px;
+    background-color: red;
+  }
+}
+
+@keyframes two
+{
+ 0%{
+   left: 60.64px;
+   top: 60.64px;
+   background-size: red;
+   }
+   25%{
+     left: 130.36px;
+     top: 130.36px;
+     background-color: red;
+   }
+   50%{
+     left: 130.36px;
+     top: 130.36px;
+     background-color: red;
+   }
+   75%
+   {
+     left: 60.64px;
+     top: 60.64px;
+     background-size: red;
+   }
+  100%{
+    left: 60.64px;
+    top: 60.64px;
+    background-color: red;
+  }
+}
+
+@keyframes three
+{
+ 0%{
+   background-color: red;
+   }
+   25%{
+     background-color: red;
+   }
+   50%{
+    background-color: red;
+   }
+   75%
+   {
+     background-color: red;
+   }
+  100%{
+    background-color:red;
+  }
+}
