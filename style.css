@@ -1,110 +1,39 @@
-
-
-.sq {
+.sq, .ci1, .ci2 {
     width: 100px;
     height: 100px;
     position: absolute;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.sq {
     top: 100px;
     left: 100px;
     transform: rotate(45deg);
-    animation-name: three;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   }
-.ci1{
-     width: 100px;
-     height: 100px;
-     position: relative;
-     border-radius: 50px;
-     animation-name: two;
-     animation-iteration-count:infinite;
-     animation-duration: 2s;
+    animation-name: rotateSquare;
 }
 
-.ci2{
-     width: 100px;
-     height: 100px;
-     position: absolute;
-     border-radius: 50px;
-     animation-name: one;
-     animation-iteration-count:infinite;
-     animation-duration: 2s;
+.ci1 {
+    border-radius: 50%;
+    animation-name: circleAnimation1;
 }
 
-@keyframes one {
- 0% {
-   left: 135.36px;
-   top: 64.64px;
-   background-color: red;
- }
-  25% {
-    left: 135.36px;
-    top: 64.64px;
-    background-size: red;
-  }
- 50%{
-    left: 64.64px;
-     top: 135.36px;
-     background-color: red;
- }
-  75% {
-    left: 64.64px;
-    top: 135.36px;
-    background-color: red;
-  }
-100% {
-    left: 135.36px;
-    top: 64.64px;
-    background-color: red;
-  }
+.ci2 {
+    border-radius: 50%;
+    animation-name: circleAnimation2;
 }
 
-@keyframes two
-{
- 0%{
-   left: 60.64px;
-   top: 60.64px;
-   background-size: red;
-   }
-   25%{
-     left: 130.36px;
-     top: 130.36px;
-     background-color: red;
-   }
-   50%{
-     left: 130.36px;
-     top: 130.36px;
-     background-color: red;
-   }
-   75%
-   {
-     left: 60.64px;
-     top: 60.64px;
-     background-size: red;
-   }
-  100%{
-    left: 60.64px;
-    top: 60.64px;
-    background-color: red;
-  }
+@keyframes rotateSquare {
+    0% { transform: rotate(45deg); }
+    100% { transform: rotate(405deg); }
 }
 
-@keyframes three
-{
- 0%{
-   background-color: red;
-   }
-   25%{
-     background-color: red;
-   }
-   50%{
-    background-color: red;
-   }
-   75%
-   {
-     background-color: red;
-   }
-  100%{
-    background-color:red;
-  }
+@keyframes circleAnimation1 {
+    0%, 100% { top: 60.64px; left: 60.64px; background-color: red; }
+    50% { top: 130.36px; left: 130.36px; }
+}
+
+@keyframes circleAnimation2 {
+    0%, 100% { top: 135.36px; left: 64.64px; background-color: red; }
+    50% { top: 64.64px; left: 135.36px; }
 }
